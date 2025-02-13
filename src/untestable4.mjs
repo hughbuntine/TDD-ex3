@@ -4,7 +4,7 @@ import pg from "pg";
 export class PostgresUserDao {
   static instance;
 
-  static getInstance() {
+  static getInstance() { // singleton pattern
     if (!this.instance) {
       this.instance = new PostgresUserDao();
     }
