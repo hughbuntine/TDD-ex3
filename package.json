@@ -22,9 +22,10 @@
   },
   "devDependencies": {
     "chai": "^4.3.10",
+    "pg-mem": "^3.0.4",
     "prettier": "^3.1.1",
     "vite": "^5.0.10",
-    "vitest": "^1.1.0"
+    "vitest": "^1.6.1"
   },
   "engines": {
     "node": ">=20",
