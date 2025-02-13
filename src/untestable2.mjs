@@ -5,8 +5,8 @@ function diceRoll() {
 }
 
 export function diceHandValue() {
-  const die1 = diceRoll();
-  const die2 = diceRoll();
+  const die1 = diceRoll(); // has randomness
+  const die2 = diceRoll(); // has randomness
   if (die1 === die2) {
     // one pair
     return 100 + die1;
@@ -15,3 +15,4 @@ export function diceHandValue() {
     return Math.max(die1, die2);
   }
 }
+

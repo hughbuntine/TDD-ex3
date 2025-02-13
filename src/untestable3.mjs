@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { parse } from "csv-parse/sync";
 
 export async function parsePeopleCsv(filePath) {
-  const csvData = await readFile(filePath, { encoding: "utf8" });
+  const csvData = await readFile(filePath, { encoding: "utf8" }); // must have a consistent file that is tested each time
   const records = parse(csvData, {
     skip_empty_lines: true,
     trim: true,
